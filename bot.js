@@ -1,3 +1,5 @@
+Bugragunes58=
+
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const ayarlar = require('./ayarlar.json');
@@ -79,13 +81,57 @@ client.unload = command => {
 };
 
 client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'sa') {
-		if (!msg.guild.member(msg.author).hasPermission("BAN_MEMBERS")) {
-			msg.author.sendMessage('Aleyküm selam,  hoş geldin ^^'); 
-		} else {
-		msg.reply('Aleyküm selam, hoş geldin ^^');
-		}
-	}
+  if (msg.content === 'amk') {
+   msg.delete(30)
+    msg.reply('**Küfür Engellendi**');
+  }
+});
+client.on('message', msg => {
+  if (msg.content === 'ananı sikim') {
+   msg.delete(30)
+    msg.reply('**Küfür Engellendi**');
+  }
+});
+client.on('message', msg => {
+  if (msg.content === 'ananı sikeyim') {
+   msg.delete(30)
+    msg.reply('**Küfür Engellendi**');
+  }
+});
+client.on('message', msg => {
+  if (msg.content === 'oç') {
+   msg.delete(30)
+    msg.reply('**Küfür Engellendi**');
+  }
+});
+client.on('message', msg => {
+  if (msg.content === 'orosbuçocugu') {
+   msg.delete(30)
+    msg.reply('**Küfür Engellendi**');
+  }
+});
+client.on('message', msg => {
+  if (msg.content === 'orosbu çocuğu') {
+   msg.delete(30)
+    msg.reply('**Küfür Engellendi**');
+  }
+});
+client.on('message', msg => {
+  if (msg.content === 'orosbu çocugu') {
+   msg.delete(30)
+    msg.reply('**Küfür Engellendi**');
+  }
+});
+client.on('message', msg => {
+  if (msg.content === 'piç') {
+   msg.delete(30)
+    msg.reply('**Küfür Engellendi**');
+  }
+});
+client.on('message', msg => {
+  if (msg.content === 'sa') {
+    msg.reply('Aleyküm Selam cnm :))');
+  }
 });
 
 client.elevation = message => {
