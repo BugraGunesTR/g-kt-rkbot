@@ -14,7 +14,7 @@ exports.run = (client, message, params) => {
       .addField('ID:', message.author.id)
       .addField('Kayýt tarihi:', message.author.createdAt)
       .addField('Durum:', durm)
-      .addField('Þu an oynadığı oyun:', message.author.presence.game ? message.author.presence.game.name : 'Şu an oyun oynamıyor')
+      .addField('Şu an oynadığı oyun:', message.author.presence.game ? message.author.presence.game.name : 'Şu an oyun oynamıyor')
       .addField('BOT mu?', message.author.bot ? '\n Evet' : 'Hayır')
       console.log("!kullanıcıbilgim komutu " + message.author.username + " tarafından kullanıldı.")
       return message.channel.sendEmbed(kullanicibilgimk);
