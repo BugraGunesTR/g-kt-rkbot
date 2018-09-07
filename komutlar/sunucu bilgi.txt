@@ -8,7 +8,7 @@ exports.run = (client, message, params) => {
     .setColor(0xFF0000)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .addField(':warning: Uyarı :warning:', '`sunucubilgi` adlı komutu özel mesajlarda kullanamazsın.')
+    .addField(':warning: UyarÄ± :warning:', '`sunucubilgi` adlÄ± komutu Ã¶zel mesajlarda kullanamazsÄ±n.')
     return message.author.sendEmbed(ozelmesajuyari); }
     if (message.channel.type !== 'dm') {
       const sunucubilgi = new Discord.RichEmbed()
@@ -18,11 +18,11 @@ exports.run = (client, message, params) => {
     .addField('Ad:', message.guild.name)
     .addField('ID', message.guild.id)
     .addField('Ana kanal:', message.guild.defaultChannel)
-    .addField('Bölge', message.guild.region)
-    .addField('Üye sayısı:', message.guild.memberCount)
+    .addField('BÃ¶lge', message.guild.region)
+    .addField('Ãœye sayÄ±sÄ±:', message.guild.memberCount)
     .addField('Sahibi:', message.guild.owner + ' (' + message.guild.ownerID + ')')
-    .addField('Kanal sayısı:', message.guild.channels.size)
-    .addField('Oluşturulma tarihi:', message.guild.createdAt)
+    .addField('Kanal sayÄ±sÄ±:', message.guild.channels.size)
+    .addField('OluÅŸturulma tarihi:', message.guild.createdAt)
     return message.channel.sendEmbed(sunucubilgi);
     }
 };
@@ -36,6 +36,6 @@ exports.conf = {
 
 exports.help = {
   name: 'sunucubilgi',
-  description: 'Sunucu hakkında bilgi verir.',
+  description: 'Sunucu hakkÄ±nda bilgi verir.',
   usage: 'sunucubilgi'
 };
