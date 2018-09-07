@@ -8,20 +8,20 @@ exports.run = (client, message) => {
     .setColor(0x00AE86)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('Özel mesajlarýný kontrol et. :postbox:');
+    .setDescription('Ã–zel mesajlarÃ½nÃ½ kontrol et. :postbox:');
     message.channel.sendEmbed(ozelmesajkontrol) }
 	const pingozel = new Discord.RichEmbed()
     .setColor(0x00AE86)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('Bot sürümü: v' + ayarlar.surum + ' Yapýmcý: Buðra (BugraGunes) **WinterFallMC**\n\n_**BOTU EKLEMEK ÝÇÝN LÝNK:**_\n\nhttps://discordapp.com/oauth2/authorize?client_id=485812404073267206&scope=bot&permissions=8 \n\n_**Linkler:**_\n\n**WinterFallMC** sunucusunun davet linki: https://discord.gg/4CVC2aP \nBotun davet linki: https://discordapp.com/oauth2/authorize?client_id=485812404073267206&scope=bot&permissions=8 \n\n**:copyright: 2017 WinterFallMC**');
+    .setDescription('Bot sÃ¼rÃ¼mÃ¼: v' + ayarlar.surum + ' YapÄ±mcÄ±: BuÄŸra (BugraGunes) **GÃ¶kTÃ¼rkler**\n\n_**BOTU EKLEMEK Ä°Ã‡Ä°N LÄ°NK:**_\n\nhttps://discordapp.com/oauth2/authorize?client_id=486096356193075221&scope=bot&permissions=40 \n\n_**Linkler:**_\n\n**GÃ¶kTÃ¼rkler** sunucusunun davet linki: https://discord.gg/m94SBGW \nBotun davet linki: https://discordapp.com/oauth2/authorize?client_id=486096356193075221&scope=bot&permissions=40 \n\n**:copyright: 2018 GÃ¶kTÃ¼rkler**');
     return message.author.sendEmbed(pingozel)
 };
 
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['bot bilgi', 'botbilgi', 'bb', 'botb', 'bbot', 'hakkýnda', 'bot hakkýnda', 'bothakkýnda'],
+  aliases: ['bot bilgi', 'botbilgi', 'bb', 'botb', 'bbot', 'hakkknda', 'bot hakkÄ±nda', 'bothakkÃ½nda'],
   permLevel: 0
 };
 
